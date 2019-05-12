@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>About Me</title>
+        <title>Contact</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,13 +17,13 @@
                             </h1>
                         </a>
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a class="nav-link px-2 py-0" href="index.html">About</a>
                             </li>
                             <li class="nav-item splitter-nav">
                                 <a class="nav-link px-2 py-0" href="portfolio.html">Portfolio</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item active">
                                 <a class="nav-link px-2 py-0" href="contact.html">Contact</a>
                             </li>
                         </ul>
@@ -33,26 +33,26 @@
             <div class="container main-container mb-3 p-3">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="mb-0">About Me</h2>
+                        <h2 class="mb-0">Contact</h2>
                     </div>
                 </div>
                 <hr>
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-12 mb-3">
-                            <img src="assets/images/prof.png" alt="Profile Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-10 col-md-6 col-12">
-                        <p>
-                            I'm a developer who has been trying to get myself back into the industry for a while now. I enjoy Video Games, Tabletop Games, and new gadgets. I got into development because I spent most of my time on the computer and wanted to know how it worked software-wise. Development is very interesting to me as it increases my understanding of computers and how they can make pretty much anything easier for those who use them. Nowadays, web applications are getting more and more prominent as they don't need to be installed and you can access them by web browser. I'd like to learn as much as I can about them.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            I am familiar with Object-Oriented Languages such as C# and Java, for which I am an Oracle Certified Associate (OCA) for Java 8 SE. Several of the technologies I am familiar with and have worked on projects for are all Java EE technologies like WebLogic Server, Java Server Pages (JSPs), Spring, Hibernate, and Maven. Picking up new technologies is something I am very good at. Show me something I don't know and how to work it, I can figure it out and make use of it rather quickly. 
-                        </p>
-                    </div>
+                <div class="row mb-1">
+                    <form class="col-12">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-primary">
+                    </form>
                 </div>
             </div>
         </div>
@@ -64,6 +64,6 @@
                     </div>
                 </div>
             </div>
-        </footer>   
+        </footer>        
     </body>
 </html>
