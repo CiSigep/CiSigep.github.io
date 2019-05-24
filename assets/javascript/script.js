@@ -6,4 +6,8 @@ $(function(){
     $('#crystal').click(function(){
         window.open('https://cisigep.github.io/Unit-4-Game/', '_blank');
     });
+
+    $('#KSP').click(function(){
+        window.open('https://cisigep.github.io/TriviaGame/', '_blank');
+    });
 });
