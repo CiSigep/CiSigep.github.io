@@ -10,4 +10,8 @@ $(function(){
     $('#KSP').click(function(){
         window.open('https://cisigep.github.io/TriviaGame/', '_blank');
     });
+
+    $("#giftastic").click(function(){
+        window.open('https://cisigep.github.io/GifTastic/', '_blank');
+    });
 });
