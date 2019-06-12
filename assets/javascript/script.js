@@ -14,4 +14,8 @@ $(function(){
     $("#giftastic").click(function(){
         window.open('https://cisigep.github.io/GifTastic/', '_blank');
     });
+
+    $("#RPS").click(function(){
+        window.open('https://cisigep.github.io/RPS-Multiplayer/', '_blank');
+    });
 });
