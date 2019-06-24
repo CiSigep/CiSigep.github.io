@@ -1,21 +1,12 @@
-$(function(){
-    $('#hangman').click(function(){
-        window.open('https://cisigep.github.io/Word-Guess-Game/', '_blank');
+$(() => {
+    $("#sidebarOpen").click(() => {
+        $(".sidebar").addClass("sidebar-active");
     });
-
-    $('#crystal').click(function(){
-        window.open('https://cisigep.github.io/Unit-4-Game/', '_blank');
+    $("#sidebarClose").click(() => {
+        $(".sidebar").removeClass("sidebar-active");
     });
-
-    $('#KSP').click(function(){
-        window.open('https://cisigep.github.io/TriviaGame/', '_blank');
-    });
-
-    $("#giftastic").click(function(){
-        window.open('https://cisigep.github.io/GifTastic/', '_blank');
-    });
-
-    $("#RPS").click(function(){
-        window.open('https://cisigep.github.io/RPS-Multiplayer/', '_blank');
+    $(".nav-link").click((e) => {
+        $(".nav-link").removeClass("active");
+        $(e.target).addClass("active");
     });
 });

@@ -1,69 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body class="d-flex flex-column">
-        <div class="flex-shrink-0">
-            <div class="nav-wrapper mb-4">
-                <div class="container mx-auto p-0">
-                    <nav class="navbar navbar-expand navbar-white bg-white p-0 top-header">
-                        <a class="navbar-brand mr-0 p-0" href="#">
-                            <h1 class="name-header mb-0 p-3">
-                                Jeffrey Freeman
-                            </h1>
-                        </a>
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link px-2 py-0" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item splitter-nav">
-                                <a class="nav-link px-2 py-0" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-2 py-0" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="container main-container mb-3 p-3">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="mb-0">About Me</h2>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-12 mb-3">
-                            <img src="assets/images/prof.png" alt="Profile Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-10 col-md-6 col-12">
-                        <p>
-                            I'm a developer who has been trying to get myself back into the industry for a while now. I enjoy Video Games, Tabletop Games, and new gadgets. I got into development because I spent most of my time on the computer and wanted to know how it worked software-wise. Development is very interesting to me as it increases my understanding of computers and how they can make pretty much anything easier for those who use them. Nowadays, web applications are getting more and more prominent as they don't need to be installed and you can access them by web browser. I'd like to learn as much as I can about them.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            I am familiar with Object-Oriented Languages such as C# and Java, for which I am an Oracle Certified Associate (OCA) for Java 8 SE. Several of the technologies I am familiar with and have worked on projects for are all Java EE technologies like WebLogic Server, Java Server Pages (JSPs), Spring, Hibernate, and Maven. Picking up new technologies is something I am very good at. Show me something I don't know and how to work it, I can figure it out and make use of it rather quickly. 
-                        </p>
-                    </div>
-                </div>
-            </div>
+<html lang="en" class="p-0 m-0 h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeffrey Freeman | Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
+</head>
+
+<body class="p-0 m-0 h-100">
+    <div class="container-fluid p-0">
+        <div class="sidebar h-100 bg-dark navbar-dark">
+            <button type="button" id="sidebarClose" class="btn close-btn text-light">&times;</button>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
         </div>
-        <footer class="footer mt-auto py-3 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center text-light ">             
-                        Copyright ©
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <button id="sidebarOpen" class="navbar-toggler" type="button" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jeffrey Freeman</a>
+
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </footer>   
-    </body>
+        </nav>
+    </div>
+
+</body>
+
 </html>
