@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="p-0 m-0 h-100">
+<html lang="en" class="p-0 m-0">
 
 <head>
     <meta charset="UTF-8">
@@ -17,28 +17,26 @@
     <script src="assets/javascript/script.js"></script>
 </head>
 
-<body class="p-0 m-0 h-100">
+<body class="p-0 m-0">
     <div class="container-fluid p-0">
-        <div class="sidebar h-100 bg-dark navbar-dark">
+        <div class="sidebar bg-dark navbar-dark">
             <button type="button" id="sidebarClose" class="btn close-btn text-light">&times;</button>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
+            <a href="#" data-target="aboutBlock">About</a>
+            <a href="#" data-target="portfolioBlock">Portfolio</a>
             <a href="#">Contact</a>
         </div>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
             <button id="sidebarOpen" class="navbar-toggler" type="button" data-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="#">Jeffrey Freeman</a>
-
-
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link active" href="#" data-target="aboutBlock">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#" data-target="portfolioBlock">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -46,8 +44,53 @@
                 </ul>
             </div>
         </nav>
+        <div class="row mx-2">
+            <div id="aboutBlock" class="col-12 content-block">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <div class="card-title">About Me</div>
+                        <hr class="border-white">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-12 mb-3">
+                                    <img src="assets/images/prof.png" alt="Profile Image" class="img-fluid">
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-12">
+                                    <p>
+                                        I'm a developer who has been trying to get myself back into the industry for a
+                                        while now. I enjoy Video Games, Tabletop Games, and new gadgets. I got into
+                                        development because I spent most of my time on the computer and wanted to know
+                                        how it worked software-wise. Development is very interesting to me as it
+                                        increases my understanding of computers and how they can make pretty much
+                                        anything easier for those who use them. Nowadays, web applications are getting
+                                        more and more prominent as they don't need to be installed and you can access
+                                        them by web browser. I'd like to learn as much as I can about them.
+                                    </p>
+                                    <p>
+                                        I am familiar with Object-Oriented Languages such as C# and Java, for which I am
+                                        an Oracle Certified Associate (OCA) for Java 8 SE. Several of the technologies I
+                                        am familiar with and have worked on projects for are all Java EE technologies
+                                        like WebLogic Server, Java Server Pages (JSPs), Spring, Hibernate, and Maven.
+                                        Picking up new technologies is something I am very good at. Show me something I
+                                        don't know and how to work it, I can figure it out and make use of it rather
+                                        quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolioBlock" class="col-12 content-block">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <div class="card-title">Portfolio</div>
+                        <hr class="border-white">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>

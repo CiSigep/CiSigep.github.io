@@ -1,3 +1,22 @@
+body {
+    background-image: linear-gradient(to bottom right, #01a3da, #15e8ff);
+    min-height: 100%;
+}
+
+html {
+    min-height: 100%;
+}
+
+.content-block {
+    display: none;
+    position: relative;
+    top: 20px;
+}
+
+.nav-link {
+    transition: 0.5s;
+}
+
 .sidebar {
     width: 0;
     position: fixed;
