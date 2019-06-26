@@ -7,6 +7,10 @@ html {
     min-height: 100%;
 }
 
+.color-text{
+    color: #01a3da;
+}
+
 .content-block {
     display: none;
     position: relative;
@@ -15,6 +19,10 @@ html {
 
 .nav-link {
     transition: 0.5s;
+}
+
+.nav-img{
+    max-height: 25px;
 }
 
 .sidebar {

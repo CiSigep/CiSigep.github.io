@@ -24,6 +24,7 @@ $(() => {
         selectBlock(e.target);
     });
     $(".sidebar a").click((e) => {
+        $(".sidebar").removeClass("sidebar-active");
         selectBlock(e.target);
     })
 
