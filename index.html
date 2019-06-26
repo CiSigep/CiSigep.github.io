@@ -1,69 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body class="d-flex flex-column">
-        <div class="flex-shrink-0">
-            <div class="nav-wrapper mb-4">
-                <div class="container mx-auto p-0">
-                    <nav class="navbar navbar-expand navbar-white bg-white p-0 top-header">
-                        <a class="navbar-brand mr-0 p-0" href="#">
-                            <h1 class="name-header mb-0 p-3">
-                                Jeffrey Freeman
-                            </h1>
-                        </a>
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link px-2 py-0" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item splitter-nav">
-                                <a class="nav-link px-2 py-0" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-2 py-0" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+<html lang="en" class="p-0 m-0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jeffrey Freeman | Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
+</head>
+
+<body class="p-0 m-0">
+    <div class="container-fluid p-0">
+        <div class="sidebar bg-dark navbar-dark">
+            <button type="button" id="sidebarClose" class="btn close-btn text-light">&times;</button>
+            <a href="#" data-target="aboutBlock">About</a>
+            <a href="#" data-target="portfolioBlock">Portfolio</a>
+            <a href="#" data-target="contactBlock">Contact</a>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+            <button id="sidebarOpen" class="navbar-toggler" type="button" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="text-sm-left text-right">
+                <a class="navbar-brand mr-2" href="#"><span class="color-text">J</span>effrey <span
+                        class="color-text">F</span>reeman</a>
+                <a href="https://github.com/CiSigep" target="_blank"><img src="assets/images/GitHub-Mark-Light-64px.png"
+                        alt="github" class="nav-img pb-1"></a>
+                <a href="https://www.linkedin.com/in/jeffrey-f-2171ba181/" target="_blank"><img
+                        src="assets/images/LI-In-Bug.png" alt="LinkedIn" class="nav-img ml-1 pb-1"></a>
+                <a href="assets/pdf/Jeffrey_Freeman_Resume.pdf" target="_blank"><img src="assets/images/resumeicon.png"
+                        alt="Resume" class="nav-img pb-1"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-target="aboutBlock">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="portfolioBlock">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-target="contactBlock">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row mx-2 mb-3">
+            <div id="aboutBlock" class="col-12 content-block">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <h3 class="card-title">About Me</h3>
+                        <hr class="border-white">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-2 col-md-6 col-12 mb-3 mb-md-0">
+                                    <img src="assets/images/prof.png" alt="Profile Image"
+                                        class="img-fluid border border-white rounded">
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-12">
+                                    <p>
+                                        I'm a developer who has been trying to get myself back into the industry for a
+                                        while now. I enjoy Video Games, Tabletop Games, and new gadgets. I got into
+                                        development because I spent most of my time on the computer and wanted to know
+                                        how it worked software-wise. Development is very interesting to me as it
+                                        increases my understanding of computers and how they can make pretty much
+                                        anything easier for those who use them. Nowadays, web applications are getting
+                                        more and more prominent as they don't need to be installed and you can access
+                                        them by web browser. I'd like to learn as much as I can about them.
+                                    </p>
+                                    <p>
+                                        I am familiar with Object-Oriented Languages such as C# and Java, for which I am
+                                        an Oracle Certified Associate (OCA) for Java 8 SE. Several of the technologies I
+                                        am familiar with and have worked on projects for are all Java EE technologies
+                                        like WebLogic Server, Java Server Pages (JSPs), Spring, Hibernate, and Maven.
+                                        Picking up new technologies is something I am very good at. Show me something I
+                                        don't know and how to work it, I can figure it out and make use of it rather
+                                        quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-white">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    Certifications:
+                                    <div class="pl-sm-2 pl-0 mt-3">
+                                        <img src="assets/images/O_Java-SE-8-OCA-clr.bmp" alt="Java 8 Certification"
+                                            class="img-fluid mh-100px bg-white rounded">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container main-container mb-3 p-3">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="mb-0">About Me</h2>
+            <div id="portfolioBlock" class="col-12 content-block">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <h3 class="card-title">Portfolio</h3>
+                        <hr class="border-white">
+                        <div class="container-fluid">
+                            <div class="row mb-3">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-3 mb-sm-0">
+                                    <img src="assets/images/MC.png" alt="Magic Carpet"
+                                        class="img-fluid border rounded border-white">
+                                </div>
+                                <div class="col-lg-8 col-sm-6 col-12">
+                                    <h4 class="font-italic">Magic Carpet</h4>
+                                    <div>
+                                        Links:
+                                        <a href="https://github.com/CiSigep/BC-Project-One"
+                                            class="text-white border-right border-white px-2"
+                                            target="_blank">Repository</a>
+                                        <a href="http://cisigep.github.io/BC-Project-One" class="text-white px-1"
+                                            target="_blank">Pages</a>
+                                    </div>
+                                    <div>Description:</div>
+                                    <div>
+                                        <p>
+                                            Welcome aboard the Magic Carpet! A Web Application that aggregates travel
+                                            information for a travelers viewing. It allows the user to view flight
+                                            quotes between cities, see events in said cities, and if they're going
+                                            quickly, some weather in the form of a 5-day forecast. Users can click on
+                                            things in the displayed information to highlight them and click save to save
+                                            their work, or clear to start the whole process again.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-3 mb-sm-0">
+                                    <img src="assets/images/RPS.png" alt="Rock Paper Scissors Multiplayer"
+                                        class="img-fluid border rounded border-white"></div>
+                                <div class="col-lg-8 col-sm-6 col-12">
+                                    <h4 class="font-italic">RPS Multiplayer</h4>
+                                    <div>
+                                        Links:
+                                        <a href="https://github.com/CiSigep/RPS-Multiplayer"
+                                            class="text-white border-right border-white px-2"
+                                            target="_blank">Repository</a>
+                                        <a href="http://cisigep.github.io/RPS-Multiplayer" class="text-white px-1"
+                                            target="_blank">Pages</a>
+                                    </div>
+                                    <div>Description:</div>
+                                    <div>
+                                        <p>
+                                            Rock, Paper, Scissors playable across an internet connection. It uses a
+                                            Firebase database as a means of finding and playing against another player.
+                                            The game will keep track of your wins, losses, and draws against the other
+                                            player.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-3 mb-sm-0">
+                                    <img src="assets/images/GifTastic.png" alt="GifTastic"
+                                        class="img-fluid border rounded border-white">
+                                </div>
+                                <div class="col-lg-8 col-sm-6 col-12">
+                                    <h4 class="font-italic">GifTastic</h4>
+                                    <div>
+                                        Links:
+                                        <a href="https://github.com/CiSigep/GifTastic"
+                                            class="text-white border-right border-white px-2"
+                                            target="_blank">Repository</a>
+                                        <a href="http://cisigep.github.io/GifTastic" class="text-white px-1"
+                                            target="_blank">Pages</a>
+                                    </div>
+                                    <div>Description:</div>
+                                    <div>
+                                        <p>
+                                            An application to view gifs from Giphy. You can search terms and it will
+                                            grab gifs from Giphy's API via AJAX an display them to you. It can grab more
+                                            pages of gifs as you click the load more button at the bottom.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-6 col-12 mb-3 mb-sm-0">
+                                    <img src="assets/images/Hangman.png" alt="Hangman"
+                                        class="img-fluid border rounded border-white">
+                                </div>
+                                <div class="col-lg-8 col-sm-6 col-12">
+                                    <h4 class="font-italic">Hangman</h4>
+                                    <div>
+                                        Links:
+                                        <a href="https://github.com/CiSigep/Word-Guess-Game"
+                                            class="text-white border-right border-white px-2"
+                                            target="_blank">Repository</a>
+                                        <a href="http://cisigep.github.io/Word-Guess-Game" class="text-white px-1"
+                                            target="_blank">Pages</a>
+                                    </div>
+                                    <div>Description:</div>
+                                    <div>
+                                        <p>
+                                            A game of Hangman using video game characters as the theme. You can type in
+                                            the keyboard to guess letters. The application keeps track of your wins and
+                                            losses, and will show the character of the last game.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-12 mb-3">
-                            <img src="assets/images/prof.png" alt="Profile Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-10 col-md-6 col-12">
-                        <p>
-                            I'm a developer who has been trying to get myself back into the industry for a while now. I enjoy Video Games, Tabletop Games, and new gadgets. I got into development because I spent most of my time on the computer and wanted to know how it worked software-wise. Development is very interesting to me as it increases my understanding of computers and how they can make pretty much anything easier for those who use them. Nowadays, web applications are getting more and more prominent as they don't need to be installed and you can access them by web browser. I'd like to learn as much as I can about them.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>
-                            I am familiar with Object-Oriented Languages such as C# and Java, for which I am an Oracle Certified Associate (OCA) for Java 8 SE. Several of the technologies I am familiar with and have worked on projects for are all Java EE technologies like WebLogic Server, Java Server Pages (JSPs), Spring, Hibernate, and Maven. Picking up new technologies is something I am very good at. Show me something I don't know and how to work it, I can figure it out and make use of it rather quickly. 
-                        </p>
+            </div>
+            <div id="contactBlock" class="col-12 content-block">
+                <div class="card bg-dark text-light">
+                    <div class="card-body">
+                        <h3 class="card-title">Contact</h3>
+                        <hr class="border-white">
+                        <div class="pl-3">
+                            <div class="mb-2">I can be reached by these methods: </div>
+                            <div class="pl-lg-4">
+                                Phone: <a href="tel:+14233640734" class="text-white">(423) 364-0734</a>
+                            </div>
+                            <div class="pl-lg-4">
+                                Email: <a href="mailto:cisigep@gmail.com" class="text-white">cisigep@gmail.com</a>
+                            </div>
+                        </div>
+                        <hr class="border-white">
+                        <div class="container-fluid">
+                            <div class="mb-2">Or you could fill out this form:</div>
+                            <form class="px-lg-4">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" rows="5" class="form-control"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <input type="submit" value="Submit" class="btn btn-primary">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="footer mt-auto py-3 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center text-light ">             
-                        Copyright ©
-                    </div>
-                </div>
-            </div>
-        </footer>   
-    </body>
+    </div>
+</body>
+
 </html>

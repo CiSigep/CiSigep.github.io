@@ -1,80 +1,67 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #777777; 
+body {
+    background-image: linear-gradient(to bottom right, #01a3da, #15e8ff);
+    min-height: 100%;
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
-body {
-    background: url("../images/rockywall.png");
-    height: 100%;
+.color-text{
+    color: #01a3da;
 }
 
-.footer {
-    background: #666666;
-    border-top: 8px solid #4AAAA5;
-    height: 58px;
+.content-block {
+    display: none;
+    position: relative;
+    top: 20px;
 }
 
-
-h2 {
-    color:  #4AAAA5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.active a {
-    color: #aaaaaa;
-}
-
-.bottom-border {
-    border-bottom: 1px solid #ccc;
-}
-
-.btn-primary {
-    background-color: #4AAAA5;
-    border-color: #4AAAA5; 
-}
-
-.image-title {
-    background: #4AAAA5;
-    color: #FFFFFF;
-    bottom: 5px;
-}
-
-.main-container {
-    background: #FFFFFF;
-    border: 1px solid #ccc;
-}
-
-.name-header {
-    background: #4AAAA5;
-    color: #FFFFFF; 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.mh-100px {
+    max-height: 100px;
 }
 
 .nav-link {
-    color: #777777;
+    transition: 0.5s;
 }
 
-.nav-link:hover {
-    color: #000000;
+.nav-img {
+    max-height: 30px;
 }
 
-.nav-wrapper {
-    background: #FFFFFF;
-    width: 100%;
-    border-bottom: 1px solid #ccc;
+.sidebar {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-.portfolio-link {
-    cursor: pointer;
+.sidebar-active {
+    width: 200px;
 }
 
-.splitter-nav {
-    border-left: 1px solid #CCCCCC;
-    border-right: 1px solid #CCCCCC;
+.sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
