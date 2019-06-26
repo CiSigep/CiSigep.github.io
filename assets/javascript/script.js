@@ -1,7 +1,6 @@
 $(() => {
     function selectBlock(element) {
         var target = $(element).attr("data-target");
-        console.log(target)
         if (!$("#" + target).hasClass("active-content")) {
             var active = $(".active-content");
             active.animate({opacity: 0, top: "20px"}, 250, "swing", function(){
